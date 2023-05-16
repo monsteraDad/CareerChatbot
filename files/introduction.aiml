@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Hi</pattern>
+	    <template>
+	        Hello! My job is to help you decide on an IT career. 
+	        However, I am limited to 5 career choices.
+	        lets start with some questions to begin. 
+	        type okay to begin.
+	    </template>
+    </category>
+
+     <category>
+        <pattern>okay</pattern>
+        <template>
+            Do you enjoy Coding? 
+            <button>
+            <text>yes</text>
+            <postback>enjoysCoding</postback>
+            </button>
+            <button>
+            <text>no</text>
+            <postback>dislikesCoding</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>enjoysCoding</pattern>
+        <template>
+            Which skills do you prefer to use?
+            <button>
+                <text>
+                    Coding languages, database knowledge, data structures and algorithm knowledge,
+                    source control management, testing, debugging, operating system knowledge, cloud computing,
+                    spreadsheet software.
+                </text>
+                <postback>softwareEngineer</postback>
+            </button>
+            <button>
+                <text>
+                    Knowledge of machine learning, neural networks, natural language processes,
+                    data science, robotics, creativity. 
+                </text>
+                <postback>AIEngineer</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>softwareEngineer</pattern>
+        <template>You should become a Software Engineer.
+            <link>
+                <text>Find out more about Software Engineering</text>
+                <url>https://www.indeed.com/career-advice/career-development/software-developer-skills </url>
+            </link>
+        </template>
+    </category>
+    
+    
+    
+    <category>
+        <pattern>AIEngineer</pattern>
+        <template>You should become an Artificial Intelligence Engineer.
+            <link>
+                <text>Find out more about Artificial Intelligence Engineering</text>
+                <url>https://emeritus.org/blog/ai-ml-how-to-become-an-ai-engineer/ </url>
+            </link>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>dislikesCoding</pattern>
+        <template>
+            Which skills do  you prefer to use?
+            <button>
+                <text>
+                    Prototyping, wireframing, userflows, visual design and design software,
+                    user research and usability testing, agile project management practives, 
+                    information architechture, application developement.
+                </text>
+                <postback>UXdesigner</postback>
+            </button>
+            <button>
+                <text>
+                    Creative mindset, ability to make complex decisions, leadership,
+                    goal setting, adaptability, budgeting, IT management, reliability,
+                    time management. 
+                </text>
+                <postback>ITPM</postback>
+            </button>
+            <button>
+                <text>
+                    Understading of computer networking, identifying security threats,
+                    analytical skills, problem solving, communication.
+                </text>
+                <postback>InfoSec</postback>
+            </button>
+        </template>
+    </category>
+    
+   <category>
+       <pattern>UXdesigner</pattern>
+       <template>You should become an User Experience Designer.
+            <link>
+                <text>Find out more about user experience designers</text>
+                <url>https://www.coursera.org/articles/essential-skills-for-ux-designers </url>
+            </link>
+       </template>
+   </category>
+   
+   <category>
+       <pattern>ITPM</pattern>
+       <template>You should become an Information Technology Project Manager.
+            <link>
+                <text>Find out more about information technology project managers</text>
+                <url>https://www.comptia.org/blog/skills-every-it-project-manager-needs </url>
+            </link>
+       </template>
+   </category>
+   
+   <category>
+       <pattern>InfoSec</pattern>
+       <template>You should become an Information Security Analyst.
+            <link>
+                <text>Find out more about information security analysts.</text>
+                <url>https://www.indeed.com/career-advice/career-development/information-security-analyst-skills </url>
+            </link>
+       </template>
+   </category>
+    
+   
+    
+    
+</aiml>
