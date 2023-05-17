@@ -5,8 +5,8 @@
 	    <template>
 	        Hello! My job is to help you decide on an IT career. 
 	        However, I am limited to 5 career choices.
-	        lets start with some questions to begin. 
-	        type okay to begin.
+	        Let's start with some questions to begin. 
+	        Type "okay" to begin.
 	    </template>
     </category>
 
